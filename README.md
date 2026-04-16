@@ -37,12 +37,8 @@
 ---
 
 ## 🏗️ Архитектура
-┌─────────────────┐      REST API      ┌─────────────────┐      ┌─────────────┐
-│                 │ ◄────────────────► │                 │      │             │
-│  Android App    │      WebSocket     │  Flask Server   │ ◄──► │ PostgreSQL  │
-│  (Kotlin)       │ ◄────────────────► │  (Python)       │      │             │
-│                 │                    │                 │      │             │
-└─────────────────┘                    └─────────────────┘      └─────────────┘
+### REST API
+Android App  >  WebSocket   >  Flask Server  >  PostgreSQL   
 
 ---
 
@@ -119,27 +115,30 @@ python server.py
 - Разрешения: Приложение запрашивает доступ к микрофону для голосовых сообщений.
 
 ## 📡 API Endpoints
-- Метод	URL	Описание
-- POST	/api/register	Регистрация
-- POST	/api/login	Вход
-- GET	/api/users/all/<user_id>	Все пользователи
-- GET	/api/users/search?q=&user_id=	Поиск пользователей
-- GET	/api/friends/<user_id>	Список друзей
-- POST	/api/friend/request	Отправить заявку
-- POST	/api/friend/accept	Принять заявку
-- POST	/api/friend/reject	Отклонить заявку
-- GET	/api/friend/requests/incoming/<user_id>	Входящие заявки
-- GET	/api/messages/<from>/<to>	История сообщений
-- POST	/api/message	Отправить сообщение
+
+| Метод | URL | Описание |
+|-------|-----|----------|
+| `POST` | `/api/register` | Регистрация |
+| `POST` | `/api/login` | Вход |
+| `GET` | `/api/users/all/<user_id>` | Все пользователи |
+| `GET` | `/api/users/search?q=&user_id=` | Поиск пользователей |
+| `GET` | `/api/friends/<user_id>` | Список друзей |
+| `POST` | `/api/friend/request` | Отправить заявку |
+| `POST` | `/api/friend/accept` | Принять заявку |
+| `POST` | `/api/friend/reject` | Отклонить заявку |
+| `GET` | `/api/friend/requests/incoming/<user_id>` | Входящие заявки |
+| `GET` | `/api/messages/<from>/<to>` | История сообщений |
+| `POST` | `/api/message` | Отправить сообщение |
 
 ## 🔌 WebSocket События
-- Событие	Направление	Описание
-- connect	Клиент → Сервер	Подключение
-- auth	Клиент → Сервер	Аутентификация {"user_id": 1}
-- new_message	Сервер → Клиент	Новое сообщение
-- user_status	Сервер → Клиент	Смена онлайн-статуса
-- disconnect	Клиент → Сервер	Отключение
 
+| Событие | Направление | Описание |
+|---------|-------------|----------|
+| `connect` | Клиент → Сервер | Подключение |
+| `auth` | Клиент → Сервер | Аутентификация `{"user_id": 1}` |
+| `new_message` | Сервер → Клиент | Новое сообщение |
+| `user_status` | Сервер → Клиент | Смена онлайн-статуса |
+| `disconnect` | Клиент → Сервер | Отключение |
 ## 🗄️ Схема базы данных
 
 ```sql
