@@ -1,0 +1,12 @@
+<resources>
+    <style name="Theme.LegacyMessenger" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#FF2A6D</item>
+        <item name="colorPrimaryVariant">#B300FF</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#05D9E8</item>
+        <item name="colorSecondaryVariant">#FF2A6D</item>
+        <item name="colorOnSecondary">#000000</item>
+        <item name="android:statusBarColor">#0a0a0f</item>
+        <item name="android:windowBackground">#0a0a0f</item>
+    </style>
+</resources>

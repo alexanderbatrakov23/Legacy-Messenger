@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="bottom_nav_color">#666666</color>
+	<color name="bottom_nav_active">#FF2A6D</color>
+    <color name="neon_pink">#FF2A6D</color>
+    <color name="neon_cyan">#05D9E8</color>
+    <color name="neon_purple">#B300FF</color>
+    <color name="dark_bg">#0a0a0f</color>
+    <color name="card_bg">#12121a</color>
+    <color name="text_primary">#e0e0e0</color>
+    <color name="text_secondary">#888888</color>
+    <color name="verified_blue">#1DA1F2</color>
+    <color name="block_red">#FF3B30</color>
+</resources>
