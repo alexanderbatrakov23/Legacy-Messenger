@@ -37,10 +37,12 @@
 ---
 
 ## 🏗️ Архитектура
-REST API 
-│ Android App │ WebSocket │ Flask Server │ ◄──► │ PostgreSQL │
-│ (Kotlin) │ ◄────────────────► │ (Python) │ 
-
+┌─────────────────┐      REST API      ┌─────────────────┐      ┌─────────────┐
+│                 │ ◄────────────────► │                 │      │             │
+│  Android App    │      WebSocket     │  Flask Server   │ ◄──► │ PostgreSQL  │
+│  (Kotlin)       │ ◄────────────────► │  (Python)       │      │             │
+│                 │                    │                 │      │             │
+└─────────────────┘                    └─────────────────┘      └─────────────┘
 
 ---
 
