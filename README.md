@@ -9,6 +9,8 @@
 | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-13-blue) | 13+ | ![License](https://img.shields.io/badge/License-MIT-yellow) | MIT |
 
 ---
+## Как выглядят оболочки 
+![Screenshot](https://forumstatic.ru/files/0019/f0/2b/16370.png)
 
 ## Установка 
 [![GitHub Badge](https://github.com/machiav3lli/oandbackupx/raw/034b226cea5c1b30eb4f6a6f313e4dadcbb0ece4/badge_github.png)](https://github.com/alexanderbatrakov23/Legacy-Messenger/releases/tag/legacymessanger)
