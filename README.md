@@ -10,6 +10,11 @@
 
 ---
 
+## Установка 
+[![GitHub Badge](https://github.com/machiav3lli/oandbackupx/raw/034b226cea5c1b30eb4f6a6f313e4dadcbb0ece4/badge_github.png)](https://github.com/alexanderbatrakov23/Legacy-Messenger/releases/tag/legacymessanger)
+
+---
+
 ## ✨ Возможности
 
 ### 📱 Клиентская часть (Android)
